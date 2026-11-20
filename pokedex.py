@@ -1,19 +1,16 @@
 import json
 pokedex = open("./pokedex.json", encoding="utf8")
 data = json.load(pokedex)
-
 for pokemon in data:
     print(pokemon["name"]["english"])
-
 def pokemon_printer():
-    language = input("What language do you want to print,engli9sh, french, japanese, chinese")
+    language = input("What language do you want to print,english, french, japanese, chinese")
     for pokemon in data:
         if language in pokemon["name"]:
             print(pokemon["name"]["language"])
         else:
             print("language not found")
-
-
+pokemon_printer()
 
 
 
