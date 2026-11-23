@@ -7,11 +7,10 @@ def pokemon_printer():
     language = input("What language do you want to print,english, french, japanese, chinese")
     for pokemon in data:
         if language in pokemon["name"]:
-            print(pokemon["name"]["language"])
+            print(pokemon["name"][language])
         else:
             print("language not found")
 pokemon_printer()
-
 
 
 
