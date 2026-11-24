@@ -12,9 +12,14 @@ def pokemon_printer():
             print("language not found")
 pokemon_printer()
 
+def pokemon_searcher():
+    type == input("What type of pokemon would you like to find?")
+    for pokemon in data:
+        if type in pokemon["type"]:
+            print(pokemon["name"]["language"])
 
 
-
+pokemon_searcher()
 
 
 
